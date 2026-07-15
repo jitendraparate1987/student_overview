@@ -44,8 +44,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $result = $s3->putObject([
                 'Bucket' => $bucket,
                 'Key'    => $fileName,
-                'SourceFile' => $_FILES['photo']['tmp_name'],
-                'ACL'    => 'public-read' // make file publicly accessible
+                'SourceFile' => $_FILES['photo']['tmp_name']
+                
             ]);
             $photo_url = $result['ObjectURL']; // S3 URL
         } catch (AwsException $e) {
