@@ -80,7 +80,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 <body>
 
-<h2>Add User</h2>
+<h2>Add User (On Another Server)</h2>
 <form method="POST" action="" enctype="multipart/form-data">
     First Name: <input type="text" name="first_name" required><br><br>
     Last Name: <input type="text" name="last_name" required><br><br>
